@@ -7,19 +7,22 @@
 <body>
   <header>
     <section class="header-top">
-      <a href="index.html">
+      <a href="index.html" aria-label="На главную страницу">
         <img src="img/logo-technomart.png" width="220px" height="47px" alt="Логотип">
       </a>
-      <div class="search" >
-        <p>Поиск</p>
+      <div class="search">
+        <p>
+          <label for="search-field">Поиск</label>
+          <input type="search" name="search" id="search-field">
+      </p>
       </div>
       <div class="bookmark">
-        <a href="#">Закладки:0</a>
+        <a href="#" aria-label="Закладки">Закладки:0</a>
       </div>
-      <div class="basket">
+      <div class="basket" aria-label="Корзина товаров">
         <a href="#">Корзина:0</a>
       </div>
-      <div class="order">
+      <div class="order" aria-label="Оформление заказа">
         <a href="#">Оформить заказ</a>
       </div>
       </section>
@@ -60,29 +63,54 @@
       <input type="range" min="0" max="40000" step="100"> <br>  
       <output name="#">0</output>
       <output name="#">30000</output>
-      <p>Производители:</p>
-      <ul>
-        <li class="uppercase">Bosch</li>
-        <li class="uppercase">Интерскоп</li>
-        <li class="uppercase">Makita</li>
-        <li class="uppercase">Dewalt</li>
-        <li class="uppercase">Hitachi</li>
-      </ul>
-      <p>Питание:</p>
-      <ul>
-        <li>Аккумуляторные</li>
-        <li>Сетевые</li>
-      </ul>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Производители:</legend>
+            <li>
+              <input type="checkbox" name="bosch" id="filter-bosch" checked>
+              <label for="filter-bosch">Bosch</label>
+            </li>
+            <li>
+              <input type="checkbox" name="interskop" id="filter-interskop">
+              <label for="filter-interskop">Интерскоп</label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">Dewalt</label>
+            </li>
+            <li>
+              <input type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">Hitachi</label>
+            </li>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="product-group" value="battery" id="filter-battery" checked>
+              <label for="filter-battery">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="product-group" value="electrical" id="filter-electrical">
+              <label for="filter-electrical">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
       <button type="button">Показать</button>
     </aside>
     <section>
       <div class="sort">
         <p class="uppercase">Сортировка:</p>
-        <a href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По функционалу</a>
-        <a href="#"><img src="img/icon-up-dir.svg" alt="up"></a>
-        <a href="#"><img src="img/icon-down-dir.svg" alt="down"></a>
+        <a href="#" aria-label="Сортировка по цене">По цене</a>
+        <a href="#" aria-label="Сортировка по типу">По типу</a>
+        <a href="#" aria-label="Сортировка по функционалу">По функционалу</a>
+        <a href="#" aria-label="Сортировка по возрастанию"><img src="img/icon-up-dir.svg" alt="up"></a>
+        <a href="#" aria-label="Сортировка по убыванию"><img src="img/icon-down-dir.svg" alt="down"></a>
       </div>
       <div class="card-product">
         <img src="img/bosch-6000.jpg" width="144px" height="128px" alt="BOSCH BFG 6000">
@@ -174,10 +202,10 @@
       </div>
       <div class="pages">
         <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+          <li><a href="#" aria-label="Страница товаров">1</a></li>
+          <li><a href="#" aria-label="Страница товаров">2</a></li>
+          <li><a href="#" aria-label="Страница товаров">3</a></li>
+          <li><a href="#" aria-label="Страница товаров">Следующая</a></li>
         </ul>
       </div>
     </section>
@@ -190,11 +218,11 @@
 
   <footer>
     <section class="adress">
-      <a href="index.html">
+      <a href="index.html" aria-label="На главную страницу">
         <img src="img/logo-teсhnomart-footer.png" width="220px" height="68px" alt="Логотип">
       </a>
       <p>г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8 </p>
-      <a href="tel:+78125550555">+7 (812) 555-05-55 </a>
+      <a href="tel:+78125550555" aria-label="Телефон компании">+7 (812) 555-05-55 </a>
     </section>
     <section class="footer-nav">
       <ul>
@@ -212,15 +240,21 @@
     <section class="footer-dark">
       <p>2010-2019 Компания "Техномарт" Все права защищены</p>
       <ul class="social-network">
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#" aria-label="В контакте">Вконтакте</a></li>
+        <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
+        <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
       </ul>
       <p>Обратная связь:</p>
-      <a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
+      <a href="mailto:mail@htmlacademy.ru" aria-label="Написать нам"> mail@htmlacademy.ru</a>
       <p>Разработано - </p>
-      <a href="htmlacademy.ru"> htmlacademy.ru</a>
+      <a href="htmlacademy.ru" aria-label="Наш сайт"> htmlacademy.ru</a>
     </section>
   </footer>
+  <div class="card-add-goods"> 
+    <button type="button">Закрыть</button>
+    <p>Товар добавлен в корзину!</p>
+    <a href="#" class="uppercase" aria-label="Оформление заказа">Оформить заказ</a>
+    <a href="#" class="uppercase" aria-label="Продолжить покупки">Продолжить покупки</a>
+  </div>
 </body>
 </html>
