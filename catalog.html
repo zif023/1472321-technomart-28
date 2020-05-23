@@ -10,11 +10,12 @@
       <a href="index.html" aria-label="На главную страницу">
         <img src="img/logo-technomart.png" width="220px" height="47px" alt="Логотип">
       </a>
-      <div class="search">
-        <p>
-          <label for="search-field">Поиск</label>
+      <div class="search-box">
+        <form action="" class="search-form">
+          <label for="search-field" class="hidden">Поиск</label>
+          <button type="submit">Поиск</button>
           <input type="search" name="search" id="search-field">
-      </p>
+        </form>
       </div>
       <div class="bookmark">
         <a href="#" aria-label="Закладки">Закладки:0</a>
@@ -29,8 +30,10 @@
       <section class="header-middle">
         <p>Интернет магазин строительных материалов и инструментов для ремонта</p>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p>г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>  
+        <p>г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+        <a href="#" aria-label="Информация о пользователе">Профайл</a>   
         <a href="blank.html">Равшан Джамшутович</a>
+        <a href="#" aria-label="Выход из кабинета">Деавторизация</a>  
         <a href="blank.html">Мои заказы</a>
         <a href="blank.html">Личный кабинет</a>
       </section>
@@ -101,7 +104,7 @@
           </ul>
         </fieldset>
       </form>
-      <button type="button">Показать</button>
+      <button type="submit">Показать</button>
     </aside>
     <section>
       <div class="sort">
@@ -250,7 +253,7 @@
       <a href="htmlacademy.ru" aria-label="Наш сайт"> htmlacademy.ru</a>
     </section>
   </footer>
-  <div class="card-add-goods"> 
+  <div class="pop-up-add-goods"> 
     <button type="button">Закрыть</button>
     <p>Товар добавлен в корзину!</p>
     <a href="#" class="uppercase" aria-label="Оформление заказа">Оформить заказ</a>

@@ -10,11 +10,12 @@
         <a href="#" aria-label="На главную страницу">
           <img src="img/logo-technomart.png" width="220px" height="47px" alt="Логотип компании">
         </a>
-        <div class="search">
-          <p>
-            <label for="search-field">Поиск</label>
+        <div class="search-box">
+          <form action="" class="search-form">
+            <label for="search-field" class="hidden">Поиск</label>
+            <button type="submit">Поиск</button>
             <input type="search" name="search" id="search-field">
-        </p>
+          </form>
         </div>
         <div class="bookmark">
           <a href="#" aria-label="Закладки">Закладки:0</a>
@@ -235,7 +236,7 @@
         </section>
     </footer>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <div class="form-letter-company">
+      <div class="pop-up-letter-company">
         <fieldset>
           <legend class="hidden">Письмо компании</legend>
           <p>
@@ -252,7 +253,10 @@
           </p>
           <button type="submit">Отправить</button>
         </fieldset>
-    </div>
+      </div>
+      <div class="pop-up-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5262861734088!2d30.31587878148!3d59.940002397096286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631104b3e355f%3A0xd898f150ecab4e9d!2sLa%20Russ!5e0!3m2!1sru!2skz!4v1590252180473!5m2!1sru!2skz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
     </form>
   </body>
 </html>
