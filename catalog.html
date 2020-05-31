@@ -11,46 +11,34 @@
   <header class="site-header">
     <div class="header-top">
       <div class="header-top-content">
-        <a href="#" aria-label="На главную страницу">
-          <div class="logo-field">
+        <a href="#" class="logo-field" aria-label="На главную страницу">
             <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании">
-          </div>
         </a>
         <div class="search-container">
-          <div class="search-box">
-            <form action="https://echo.htmlacademy.ru" class="search-form">
-              <label for="input-field" class="hidden">Поиск</label>
-              <div class="search-field">
-                <span class="icon-search">
-                  <img class="inject-me" src="img/icon-search.svg">
-                </span>
-                <input type="search" name="search" id="input-field" placeholder="Поиск:">
-              </div>
-            </form>
-          </div>
-          <div class="bookmark">
-            <a href="#">
-              <img class="inject-me" src="img/icon-bookmark.svg"> Закладки: 0
-            </a>
-          </div>
-          <div class="basket">
-            <a href="#" >
-              <img class="inject-me" src="img/icon-cart.svg"> Корзина: 0
-            </a>
-          </div>
-          <div class="order">
-            <a href="#">Оформить заказ</a>
-          </div>
+          <form action="https://echo.htmlacademy.ru" class="search-form" class="search-box">
+            <label for="input-field" class="hidden">Поиск</label>
+            <div class="search-field">
+              <span class="icon-search">
+                <img class="inject-me" src="img/icon-search.svg">
+              </span>
+              <input type="search" name="search" id="input-field" placeholder="Поиск:">
+            </div>
+          </form>
+          <a href="#" class="bookmark">
+            <img class="inject-me" src="img/icon-bookmark.svg"> Закладки: 0
+          </a>
+          <a href="#" class="basket">
+            <img class="inject-me" src="img/icon-cart.svg"> Корзина: 0
+          </a>
+          <a href="#" class="order">Оформить заказ</a>
         </div>
       </div>
     </div>
     <div class="header-adress">
       <p class="italic-red">Интернет магазин строительных материалов и инструментов для ремонта</p>
-      <div сlass="header-phone">
-        <a href="tel:+78125550555" aria-label="Телефон компании">
-          <img class="inject-me" src="img/icon-phone.svg"> +7 (812) 555-05-55
-        </a>
-      </div>
+      <a href="tel:+78125550555" class="header-phone" aria-label="Телефон компании">
+        <img class="inject-me" src="img/icon-phone.svg"> +7 (812) 555-05-55
+      </a>
       <p class="adress-text">г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>  
       <div class="user-interface">
         <a href="#" aria-label="Информация о пользователе">
@@ -87,69 +75,67 @@
       </ul>
       <h1>Перфораторы</h1>
     </div>
-    <aside>
-      <h3 class="uppercase">Фильтр:</h3>
-      <form action="https://echo.htmlacademy.ru" method="get" class="filter-product">
-        <fieldset>
-          <legend>Цена:</legend>
-            <input type="range" min="0" max="40000" step="100"> <br>  
-            <output name="#">0</output>
-            <output name="#">30000</output>
-        </fieldset>
-        <fieldset class="maker-list">
-          <legend>Производители:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="bosch" id="filter-bosch" checked>
-              <label for="filter-bosch">Bosch</label>
-            </li>
-            <li>
-              <input type="checkbox" name="interskop" id="filter-interskop">
-              <label for="filter-interskop">Интерскоп</label>
-            </li>
-            <li>
-              <input type="checkbox" name="makita" id="filter-makita" checked>
-              <label for="filter-makita">Makita</label>
-            </li>
-            <li>
-              <input type="checkbox" name="dewalt" id="filter-dewalt">
-              <label for="filter-dewalt">Dewalt</label>
-            </li>
-            <li>
-              <input type="checkbox" name="hitachi" id="filter-hitachi">
-              <label for="filter-hitachi">Hitachi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Питание:</legend>
-          <ul>
-            <li>
-              <input type="radio" name="product-group" value="battery" id="filter-battery" checked>
-              <label for="filter-battery">Аккумуляторные</label>
-            </li>
-            <li>
-              <input type="radio" name="product-group" value="electrical" id="filter-electrical">
-              <label for="filter-electrical">Сетевые</label>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-      <button type="submit">Показать</button>
-    </aside>
-    <section>
-      <h3>Сортировка товаров</h3>
-      <div class="sort">
-        <p class="uppercase">Сортировка:</p>
-        <a href="#" aria-label="Сортировка по цене">По цене</a>
-        <a href="#" aria-label="Сортировка по типу">По типу</a>
-        <a href="#" aria-label="Сортировка по функционалу">По функционалу</a>
-        <a href="#" aria-label="Сортировка по возрастанию"><img src="img/icon-up-dir.svg" alt="up"></a>
-        <a href="#" aria-label="Сортировка по убыванию"><img src="img/icon-down-dir.svg" alt="down"></a>
-      </div>
+    <div class="sort">
+      <h3 class="sort-title">Фильтр:</h3>
+      <h3 class="sort-title">Сортировка:</h3>
+      <a href="#" aria-label="Сортировка по цене">По цене</a>
+      <a href="#" aria-label="Сортировка по типу">По типу</a>
+      <a href="#" aria-label="Сортировка по функционалу">По функционалу</a>
+      <a href="#" aria-label="Сортировка по возрастанию"><img src="img/icon-up-dir.svg" alt="up"></a>
+      <a href="#" aria-label="Сортировка по убыванию"><img src="img/icon-down-dir.svg" alt="down"></a>
+    </div>
+    <div class="filter-container">
+      <aside class="filter-field">
+        <form action="https://echo.htmlacademy.ru" method="get" class="filter-product">
+          <fieldset>
+            <legend>Цена:</legend>
+              <input type="range" min="0" max="40000" step="100"> <br>  
+              <output name="#">0</output>
+              <output name="#">30000</output>
+          </fieldset>
+          <fieldset class="maker-list">
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">Bosch</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interskop" id="filter-interskop">
+                <label for="filter-interskop">Интерскоп</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="product-group" value="battery" id="filter-battery" checked>
+                <label for="filter-battery">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="product-group" value="electrical" id="filter-electrical">
+                <label for="filter-electrical">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <button type="submit">Показать</button>
+      </aside>
 
-      <div class="container-card">
-
+      <div class="cards-container">
         <div class="card-product">
           <div class="card-product-img">
             <img src="img/bosch-6000.jpg" width="144" height="128" alt="BOSCH BFG 6000">
@@ -293,7 +279,8 @@
           <li><a href="#" aria-label="Страница товаров">Следующая</a></li>
         </ul>
       </div>
-    </section>
+      </div>
+    </div>  
     <article>
       <h3 class="uppercase">Пара слов о перфораторах</h3>
       <p>Перфоратор - уникальный стоительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
@@ -301,7 +288,7 @@
     </article>
   </main>
 
-  <footer>
+  <footer class="footer-container">
     <div class="footer-light">
       <div class="footer-light-content">
         <h1 class="hidden">Контакты компании</h1>
