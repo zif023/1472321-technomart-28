@@ -34,6 +34,8 @@ iframe {
     --special-old-coast: #A9A9A9;
     --special-background-popular:#F9F5F0;
     --special-background-grey:#F2F6F8;
+    --special-background-orange:#FFC047;
+    --special-background-beige: #F7F3EC;
 }
 
 /*Global*/
@@ -305,6 +307,107 @@ a.user-name:hover {
     margin: 0 auto;
 }
 
+.box {
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box h3 {
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+color: var(--basic-white);
+}
+
+.box a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0px;
+}
+
+.box a:hover {
+    background-color: rgba(197, 197, 197, 0.3);
+}
+
+.box a:active {
+    background-color: rgba(169, 169, 169, 0.3);
+}
+
+.materials {
+    padding-left: 22px;
+    min-width: 135px;
+    background-color: var(--special-yellow);
+    background-image: url(../img/icon-materials.png);
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
+}
+
+.tools {
+    padding-left: 22px;
+    min-width: 135px;
+    background-color: var(--special-blue);
+    background-image: url(../img/icon-tools.png);
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
+}
+
+.technic {
+    padding-left: 22px;
+    min-width: 135px;
+    background-color: var(--special-lilac);
+    background-image: url(../img/icon-technic.png);
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
+}
+
+.sales {
+    padding-left: 22px;
+    min-width: 135px;
+    background-color: var(--special-greenlight);
+    background-image: url(../img/icon-sales.png);
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
+}
+
+.delivery {
+    padding-left: 22px;
+    min-width: 135px;
+    background-color: var(--special-background-orange);
+    background-image: url(../img/icon-delivery.png);
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
+}
+
+.slider {
+    background-image: url(/img/slider-fon-1.jpg);
+    background-repeat: no-repeat;
+    min-height: 266px;
+}
+
+.slider li {
+    list-style-type: none;
+}
+
+.slider h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.slider p {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+}
+
 .catalog-product {
     width: 940px;
     margin: 0 auto;
@@ -368,7 +471,49 @@ a.user-name:hover {
     color: var(--basic-black);
 }
 
-.sort,
+.sort {
+    width: 940px;
+    margin: 0 auto;
+    background-color: var(--special-background-beige);
+}
+
+.sort a {
+    margin-right: 20px;
+    padding: 0;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+    border-bottom: 1px dotted red;
+    color: var(--basic-black);
+    opacity:0.3;
+}
+
+.sort a:hover {
+    border-bottom: 1px solid red;
+    color: var(--basic-black);
+    opacity: 1;
+}
+
+.sort a:active {
+    border-bottom: 0;
+    color: var(--basic-red);
+}
+
+.sort-icon a {
+    color: var(--basic-greylight);
+    border:0;
+}
+
+.sort-icon a:hover {
+    color: var(--basic-black);
+    border:0;
+}
+
+.sort-icon a:active {
+    color: var(--basic-red);
+    border:0;
+}
+
 .filter-container {
     width: 940px;
     margin: 0 auto;
@@ -548,6 +693,41 @@ a.user-name:hover {
 
 .about-us ul li p{
     margin-left: 37px;
+}
+
+.pages li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 38px;
+    min-height: 38px;
+    float: left;
+    list-style: none;
+    border-radius: 2px;
+    border: 1px solid #e5e5e5;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.article {
+    background-color: var(--basic-background);
+}
+
+.article-content {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.article-content h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.article-content p {
+    font-size: 13px;
+    line-height: 24px;
 }
 
 .button {
