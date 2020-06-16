@@ -15,31 +15,32 @@
               <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании">
           </a>
           <div class="search-container">
-            <form action="https://echo.htmlacademy.ru" class="search-form" class="search-box">
+            <form action="https://echo.htmlacademy.ru" class="search-form">
               <label for="input-field" class="hidden">Поиск</label>
-              <div class="search-field">
-                <span class="icon-search">
-                  <img class="inject-me" src="img/icon-search.svg">
-                </span>
-                <input type="search" name="search" id="input-field" placeholder="Поиск:">
-              </div>
+              <input type="search" name="search" id="input-field" class="search-field" placeholder="Поиск:">
+              <img class="inject-me icon-search" src="img/icon-search.svg" width="17" height="17">
             </form>
             <a href="#" class="bookmark">
-              <img class="inject-me" src="img/icon-bookmark.svg"> Закладки: 0
+              <img class="inject-me" src="img/icon-bookmark.svg"> Закладки:
             </a>
             <a href="#" class="basket">
-              <img class="inject-me" src="img/icon-cart.svg"> Корзина: 0
+              <img class="inject-me" src="img/icon-cart.svg"> Корзина:
             </a>
             <a href="#" class="order">Оформить заказ</a>
           </div>
         </div>
       </div>
-      <div class="header-adress">
-        <p class="italic-red">Интернет магазин строительных материалов и инструментов для ремонта</p>
-        <a href="tel:+78125550555" class="header-phone" aria-label="Телефон компании">
-          <img class="inject-me" src="img/icon-phone.svg"> +7 (812) 555-05-55
-        </a>
-        <p class="adress-text">г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>  
+
+      <div class="header-address">
+        <div class="header-address-left">
+          <p>Интернет магазин строительных материалов <br> и инструментов для ремонта</p>
+        </div>
+        <div class="header-address-center">
+          <a href="tel:+78125550555" class="header-phone" aria-label="Телефон компании">
+            <img class="inject-me" src="img/icon-phone.svg"> +7 (812) 555-05-55
+          </a>
+          <p class="address-text">г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>  
+        </div>
         <div class="user-interface">
           <a href="blank.html" aria-label="Вход">
             <img class="inject-me" src="img/icon-login-enter.svg">Войти
@@ -47,6 +48,7 @@
           <a href="blank.html" aria-label="Регистрация">Регистрация</a>
         </div>
       </div>
+
       <nav class="site-navigation">
         <ul class="navigation-list">
           <li><a href="index.html">Главная</a></li>
@@ -62,7 +64,6 @@
 
     <main>
       <section class="all-catalog">
-        <div class="all-catalog-left">
           <div class="box materials">
             <h3>Материалы</h3>
             <a href="#" aria-label="Материалы">На любой вкус</a>
@@ -89,8 +90,8 @@
               </li>  
             </ul>    
           </div>
-        </div>
-        <div class="all-catalog-right">
+        
+        
           <div class="box technic">
             <h3>Техника</h3>
             <a href="#" aria-label="Строительные материалы">Для стройки</a>
@@ -103,7 +104,7 @@
             <h3>Доставка</h3>
             <a href="#" aria-label="Условия доставки">Бесплатно</a>
           </div>
-        </div>
+        
       </section>
 
       <section class="popular-product">
@@ -123,9 +124,9 @@
               <p class="old-coast">32500 Р.</p>
               <p class="actual-coast">25500 Р.</p>
             </div>
-            <div class="hidden">
-              <a href="#" aria-label="Добавить в корзину">Купить</a>
-              <button type="button">В закладки</button>
+            <div class="buttons-card">
+              <a href="#" class="button-buy" aria-label="Добавить в корзину">Купить</a>
+              <button class="button-bookmark" type="button">В закладки</button>
             </div>
           </div>
           <div class="card-product">
@@ -139,9 +140,9 @@
               <p class="old-coast">22500 Р.</p>
               <p class="actual-coast">15500 Р.</p>
             </div>
-            <div class="hidden">
-              <a href="#" aria-label="Добавить в корзину">Купить</a>
-              <button type="button">В закладки</button>
+            <div class="buttons-card">
+              <a href="#" class="button-buy" aria-label="Добавить в корзину">Купить</a>
+              <button class="button-bookmark" type="button">В закладки</button>
             </div>
           </div>
           <div class="card-product">
@@ -155,9 +156,9 @@
               <p class="old-coast">30500 Р.</p>
               <p class="actual-coast">25500 Р.</p>
             </div>
-            <div class="hidden">
-              <a href="#" aria-label="Добавить в корзину">Купить</a>
-              <button type="button">В закладки</button>
+            <div class="buttons-card">
+              <a href="#" class="button-buy" aria-label="Добавить в корзину">Купить</a>
+              <button class="button-bookmark" type="button">В закладки</button>
             </div>
           </div>
           <div class="card-product">
@@ -170,9 +171,9 @@
               </p>
               <p class="actual-coast">12500 Р.</p>
             </div>
-            <div class="hidden">
-              <a href="#" aria-label="Добавить в корзину">Купить</a>
-              <button type="button">В закладки</button>
+            <div class="buttons-card">
+              <a href="#" class="button-buy" aria-label="Добавить в корзину">Купить</a>
+              <button class="button-bookmark" type="button">В закладки</button>
             </div>
           </div>
         </div>
@@ -184,30 +185,14 @@
           <a href="#" class="button" aria-label="Список производителей">Все производители</a>
         </div>  
         <div class="manufacturers-list">
-          <div class="manufacturers-card">
-            <a href="#" aria-label="bosch"><img src="img/bosch.png" width="126" height="37" alt=""></a>
-          </div>
-          <div class="manufacturers-card">
-            <a href="#" aria-label="makita"><img src="img/makita.png" width="123" height="40" alt=""></a>
-          </div>
-          <div class="manufacturers-card">
-            <a href="#" aria-label="dewalt"><img src="img/dewalt.png" width="146" height="44" alt=""></a>
-          </div>
-          <div class="manufacturers-card">
-            <a href="#" aria-label="интерскол"><img src="img/interskol.png" width="200" height="88" alt=""></a>
-          </div>
-          <div class="manufacturers-card">
-            <a href="#" aria-label="hitachi"><img src="img/hitachi.png" width="169" height="31" alt=""></a>
-          </div>
-          <div class="manufacturers-card">
-            <a href="#" aria-label="lg"><img src="img/lg.png" width="121" height="73" alt=""></a>
-          </div>
-          <div class="manufacturers-card">
-            <a href="#" aria-label="aeg"><img src="img/aeg.png" width="151" height="96" alt=""></a>
-          </div>
-          <div class="manufacturers-card">
-            <a href="#" aria-label="metabo"><img src="img/metabo.png" width="204" height="69" alt=""></a>
-          </div>
+          <a href="#" class="manufacturers-card" aria-label="bosch"><img src="img/bosch.png" width="126" height="37" alt=""></a>    
+          <a href="#" class="manufacturers-card" aria-label="makita"><img src="img/makita.png" width="123" height="40" alt=""></a>          
+          <a href="#" class="manufacturers-card" aria-label="dewalt"><img src="img/dewalt.png" width="146" height="44" alt=""></a>
+          <a href="#" class="manufacturers-card" aria-label="интерскол"><img src="img/interskol.png" width="200" height="88" alt=""></a>
+          <a href="#" class="manufacturers-card" aria-label="hitachi"><img src="img/hitachi.png" width="169" height="31" alt=""></a>        
+          <a href="#" class="manufacturers-card" aria-label="lg"><img src="img/lg.png" width="121" height="73" alt=""></a>        
+          <a href="#" class="manufacturers-card" aria-label="aeg"><img src="img/aeg.png" width="151" height="96" alt=""></a>          
+          <a href="#" class="manufacturers-card" aria-label="metabo"><img src="img/metabo.png" width="204" height="69" alt=""></a>
         </div>
       </section>
       
@@ -233,7 +218,7 @@
           <li  class="hidden">
             <h2>Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a href="#">Отправить заявку</a>
+            <a href="#" class="button">Отправить заявку</a>
           </li>
         </ul>
       </section>
@@ -262,66 +247,67 @@
     </main>  
     
     <footer class="footer-container">
-        <div class="footer-light">
-          <div class="footer-light-content">
-            <h1 class="hidden">Контакты компании</h1>
-            <a href="#" aria-label="На главную страницу">
-              <img src="img/logo-teсhnomart-footer.png" width="220" height="68" alt="Логотип">
-            </a>
-            <p>г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8 </p>
-            <a href="tel:+78125550555" aria-label="Телефон компании">+7 (812) 555-05-55 </a>
-            <div class="footer-nav">
-              <ul class="footer-nav-list-first">
-                <li><a href="blank.html">Компания</a></li>
-                <li><a href="blank.html">Новости</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="blank.html">Доставка</a></li>
-                <li><a href="blank.html">Контакты</a></li>
-              </ul>
-              <ul class="footer-nav-list-second">  
-                <li><a href="blank.html">Материалы</a></li>
-                <li><a href="blank.html">Техника</a></li>
-                <li><a href="blank.html">Инструмент</a></li>
-                <li><a href="blank.html">Спецпредложения</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-dark">
-          <div class="footer-dark-content">
-            <p>2010-2019 Компания "Техномарт" Все права защищены</p>
-            <ul class="social-network">
-              <li>
-                <a href="#" class="icon-vkontakte" aria-label="В контакте">
-                  <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z"/>
-                    <path d="M24.5403 25.7281C25.4609 25.4384 26.6396 27.6406 27.8943 28.4834C28.8361 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8233 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.367 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7993 15.1128C22.3881 15.0153 22.0876 14.9516 21.039 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3576 15.9444C17.6079 15.9772 18.1693 16.0944 18.4698 16.4937C18.8559 17.0112 18.8444 18.1709 18.8444 18.1709C18.8444 18.1709 19.0649 21.3687 18.3244 21.7653C17.8159 22.0372 17.1207 21.4822 15.6252 18.9378C14.8616 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.7301 15.6116 13.393 15.5562 13.393 15.5562L9.81659 15.5787C9.81659 15.5787 9.27926 15.5937 9.08185 15.8244C8.90659 16.0287 9.06741 16.4506 9.06741 16.4506C9.06741 16.4506 11.8687 22.9016 15.0407 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4339 28.6437C23.6496 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.6101 26.0187 24.5403 25.7281Z" fill="white"/>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="icon-facebook" aria-label="Фейсбук">
-                  <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z"/>
-                    <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white"/>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="icon-instagram" aria-label="Инстаграм">
-                  <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z" fill="white"/>
-                  </svg>
-                </a>
-              </li>
+      <div class="footer-light">
+        <div class="footer-light-content">
+          <h1 class="hidden">Контакты компании</h1>
+          <a href="#" aria-label="На главную страницу">
+            <img src="img/logo-teсhnomart-footer.png" width="220" height="68" alt="Логотип">
+          </a>
+          <p>г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8 </p>
+          <a href="tel:+78125550555" aria-label="Телефон компании">+7 (812) 555-05-55 </a>
+          <div class="footer-nav">
+            <ul class="footer-nav-list-first">
+              <li><a href="blank.html">Компания</a></li>
+              <li><a href="blank.html">Новости</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="blank.html">Доставка</a></li>
+              <li><a href="blank.html">Контакты</a></li>
             </ul>
-            <p>Обратная связь: </p>
-            <a href="#"> mail@htmlacademy.ru</a>
-            <p>Разработано - </p>
-            <a href="mailto:mail@htmlacademy.ru"> htmlacademy.ru</a>
+            <ul class="footer-nav-list-second">  
+              <li><a href="blank.html">Материалы</a></li>
+              <li><a href="blank.html">Техника</a></li>
+              <li><a href="blank.html">Инструмент</a></li>
+              <li><a href="blank.html">Спецпредложения</a></li>
+            </ul>
           </div>
         </div>
+      </div>
+      
+      <div class="footer-dark">
+        <div class="footer-dark-content">
+          <p>2010-2019 Компания "Техномарт" Все права защищены</p>
+          <ul class="social-network">
+            <li>
+              <a href="#" class="icon-vkontakte" aria-label="В контакте">
+                <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z"/>
+                  <path d="M24.5403 25.7281C25.4609 25.4384 26.6396 27.6406 27.8943 28.4834C28.8361 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8233 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.367 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7993 15.1128C22.3881 15.0153 22.0876 14.9516 21.039 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3576 15.9444C17.6079 15.9772 18.1693 16.0944 18.4698 16.4937C18.8559 17.0112 18.8444 18.1709 18.8444 18.1709C18.8444 18.1709 19.0649 21.3687 18.3244 21.7653C17.8159 22.0372 17.1207 21.4822 15.6252 18.9378C14.8616 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.7301 15.6116 13.393 15.5562 13.393 15.5562L9.81659 15.5787C9.81659 15.5787 9.27926 15.5937 9.08185 15.8244C8.90659 16.0287 9.06741 16.4506 9.06741 16.4506C9.06741 16.4506 11.8687 22.9016 15.0407 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4339 28.6437C23.6496 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.6101 26.0187 24.5403 25.7281Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-facebook" aria-label="Фейсбук">
+                <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z"/>
+                  <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-instagram" aria-label="Инстаграм">
+                <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p>Обратная связь: </p>
+          <a href="#"> mail@htmlacademy.ru</a>
+          <p>Разработано - </p>
+          <a href="mailto:mail@htmlacademy.ru"> htmlacademy.ru</a>
+        </div>
+      </div>
     </footer>
 
     <form action="https://echo.htmlacademy.ru" method="post" class="hidden">
@@ -349,13 +335,6 @@
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/svg-injector.min.js"></script>
-    <script>
-      // Elements to inject
-      var mySVGsToInject = document.querySelectorAll('img.inject-me');
-     
-      // Do the injection
-      SVGInjector(mySVGsToInject);
-      //$('.new-product').each(function(i, div){$(div).html($(div).html()+"<h1>NEW</h1>")})
-    </script>
+    <script src="js/injector.js"></script>
   </body>
 </html>
