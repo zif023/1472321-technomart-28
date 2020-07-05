@@ -37,6 +37,7 @@ iframe {
     --special-background-orange:#FFC047;
     --special-background-beige: #F7F3EC;
     --special-background-darkgreen: #518534;
+    --special-slider-header: rgba(0, 0, 0, 0.25);
 }
 
 /*Global*/
@@ -72,7 +73,6 @@ img {
 .site-header {
     background-color: var(--basic-background);
     margin: 0 auto;
-    width: 100vw;
     overflow: visible;
     padding-bottom: 60px;
 }
@@ -226,13 +226,13 @@ img {
     min-height: 158px;
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: top;
+    justify-content: space-between;
     padding-top: 54.5px;
     padding-bottom: 40px;
 }
 
 .header-address-left {
+    width: 197px;
     flex-basis: 197px;
     margin-left: 30px;
     color: var(--basic-red);
@@ -241,7 +241,7 @@ img {
     font-style: italic;
 }
 
-.header-address a {
+.header-address-center a {
     color: var(--basic-red);
     font-size: 21px;
     line-height: 30px;
@@ -285,22 +285,64 @@ img {
     color: var(--basic-black);
 }*/
 
+.user-interface-catalog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .user-interface-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 299px;
     padding: 12px 15px;
     background-color: var(--basic-white);
+    margin-bottom: 7px;
 }
 
 .user-interface-container a {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
     display: block;
 }
 
+.user-interface-container svg {
+    color: var(--basic-greylight)
+}
+
+.user-interface-link {
+    display: flex;
+    justify-content: center;
+}
+
+.user-interface-link a {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-text);
+}
+
+.user-interface-link a:first-child {
+    margin-right: 10px;
+}
+
+.user-interface-link a:hover {
+    color: var(--basic-red);
+}
+
+.user-interface-link a:active {
+    color: var(--basic-greylight);
+}
+
 .user-name {
-    width: 186px;
+    width: 232px;
+}
+
+.user-name svg {
+    margin-right: 15px;
 }
 
 .user-interface a:last-child {
@@ -506,7 +548,7 @@ a.user-name:hover {
     height: 104px;
     padding-left: 24px;
     padding-top: 23px;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--special-slider-header);
 }
 
 .slider p {
@@ -516,7 +558,7 @@ a.user-name:hover {
 }
 
 .slider-list-item {
-    background-image: url(/img/slider-bg-perforator.jpg);
+    background-image: url(../img/slider-bg-perforator.jpg);
     background-repeat: no-repeat;
     list-style-type: none;
     display: flex;
@@ -544,7 +586,7 @@ a.user-name:hover {
 .icon-prew {
     width: 22px;
     height: 40px;
-    background-image: url(/img/slider-icon-prew.svg);
+    background-image: url(../img/slider-icon-prew.svg);
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
@@ -557,7 +599,7 @@ a.user-name:hover {
 .icon-next {
     width: 22px;
     height: 40px;
-    background-image: url(/img/slider-icon-next.svg);
+    background-image: url(../img/slider-icon-next.svg);
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
@@ -711,6 +753,12 @@ a.user-name:hover {
 .sort a:active {
     border-bottom: 0;
     color: var(--basic-red);
+}
+
+.sort .sort-active {
+    color: var(--basic-red);
+    border-bottom: none;
+    opacity: 1;
 }
 
 .sort-icon a {
@@ -1005,7 +1053,7 @@ a.user-name:hover {
     position: absolute;
     content: "";
     display: block;
-    background: url(/img/shadow-item-list.png);
+    background: url(../img/shadow-item-list.png);
     background-repeat:  no-repeat;
     width: 10px;
     height: 272px;
@@ -1164,6 +1212,14 @@ a.user-name:hover {
 }
 
 .page-active {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 38px;
+    height: 38px;
     color: var(--basic-white);
     background-color: var(--basic-red);
 }
@@ -1310,7 +1366,8 @@ a.user-name:hover {
     list-style-type: none;
 }
 
-.footer-dark-content a {
+.feedback a,
+.developer a {
     color: var(--special-yellowlight);
 }
 
@@ -1323,17 +1380,13 @@ a.user-name:hover {
     color: var(--basic-red);
 }
 
-.icon-vkontakte, .icon-facebook, .icon-instagram {
-    fill: var(--special-icon-socialnet);
+.social-link {
+    color: var(--special-icon-socialnet);
 }
 
-.icon-vkontakte:active, 
-.icon-facebook:active, 
-.icon-instagram:active,
-.icon-vkontakte:hover, 
-.icon-facebook:hover, 
-.icon-instagram:hover {
-    fill: var(--basic-red);
+.social-link:active, 
+.social-link:hover {
+    color: var(--basic-red);
 }
 
 
