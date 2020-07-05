@@ -81,52 +81,67 @@
         <aside class="filter-field">
           <h3 class="sort-title filter">Фильтр:</h3>
           <form action="https://echo.htmlacademy.ru" method="get" class="filter-product">
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Цена:</legend>
-                <input type="range" min="0" max="40000" step="100"> <br>  
-                <output name="#">0</output>
-                <output name="#">30000</output>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input type="number" name="min-price" value="0">
+                  </label>
+                  <span>-</span>
+                  <label class="max-price">
+                    <input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset class="maker-list">
+            <fieldset class="makers">
               <legend>Производители:</legend>
-              <ul>
-                <li>
-                  <input type="checkbox" name="bosch" id="filter-bosch" checked>
+              <ul class="makers-list">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                   <label for="filter-bosch">Bosch</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="interskop" id="filter-interskop">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interskop" id="filter-interskop">
                   <label for="filter-interskop">Интерскоп</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="makita" id="filter-makita" checked>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
                   <label for="filter-makita">Makita</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                   <label for="filter-dewalt">Dewalt</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
                   <label for="filter-hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="supply">
               <legend>Питание:</legend>
-              <ul>
-                <li>
-                  <input type="radio" name="product-group" value="battery" id="filter-battery" checked>
+              <ul class="supply-list">
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="product-group" value="battery" id="filter-battery" checked>
                   <label for="filter-battery">Аккумуляторные</label>
                 </li>
-                <li>
-                  <input type="radio" name="product-group" value="electrical" id="filter-electrical">
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="product-group" value="electrical" id="filter-electrical">
                   <label for="filter-electrical">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
           </form>
-          <button type="submit">Показать</button>
+          <button class="button-show" type="submit">Показать</button>
         </aside>
         <div class="sort-container">
           <div class="sort">

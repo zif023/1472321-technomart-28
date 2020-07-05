@@ -309,26 +309,34 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-map hidden">
+      <form action="https://echo.htmlacademy.ru" method="post" class="">
+        <div class="pop-up-letter-company">
+          <fieldset class="modal-login">
+            <legend class="hidden">Письмо компании</legend>
+            <div class="letter-company">
+              <p>
+                <label for="user-name">Ваше имя:</label><br>
+                <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
+              </p>
+              <p>
+                <label for="user-email">Ваш e-mail:</label><br>
+                <input id="user-email" type="email" name="name" placeholder="email@example.com" required>
+              </p>
+            </div>
+            <p>
+              <label for="text-letter">Текст письма:</label><br>
+              <textarea name="letter" id="text-letter" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+            </p>
+            <div class="modal-bottom">
+              <button type="submit" class="button">Отправить</button>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>    
 
-    <form action="https://echo.htmlacademy.ru" method="post" class="hidden">
-      <div class="pop-up-letter-company">
-        <fieldset>
-          <legend class="hidden">Письмо компании</legend>
-          <p>
-            <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
-          </p>
-          <p>
-            <label for="user-email">Ваш e-mail:</label>
-            <input id="user-email" type="email" name="name" placeholder="email@example.com" required>
-          </p>
-          <p>
-            <label for="text-letter">Текст письма:</label><br>
-            <textarea name="letter" id="text-letter" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
-          </p>
-          <button type="submit">Отправить</button>
-        </fieldset>
-      </div>
       <div class="pop-up-map hidden">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5262861734088!2d30.31587878148!3d59.940002397096286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631104b3e355f%3A0xd898f150ecab4e9d!2sLa%20Russ!5e0!3m2!1sru!2skz!4v1590252180473!5m2!1sru!2skz" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
