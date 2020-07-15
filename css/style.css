@@ -192,6 +192,7 @@ input[type="radio"].visually-hidden {
     border:0;
     color: var(--basic-black);
     background-color: var(--basic-white);
+    outline: none;
 }
 
 .search-field:focus+.icon-search {
@@ -478,7 +479,6 @@ a.user-name:hover {
 .site-navigation li {
     height: 60px;
     list-style-type: none; 
-    display: inline-block;
     padding-top: 16px;
     padding-left: 24px;
     padding-right: 24px;
@@ -532,8 +532,8 @@ a.user-name:hover {
 }
 
 .box a {
-    display: inline-block;
-    min-width: 135px;
+    display: block;
+    width: 135px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
@@ -781,6 +781,7 @@ a.user-name:hover {
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-left: 0;
+    letter-spacing: 1.2px;
 }
 
 .bread-crumb li {
@@ -1334,7 +1335,7 @@ a.user-name:hover {
 }
 
 .popular-manufacturers-line {
-    margin-top: 50px;
+    margin-top: 52px;
 }
 
 .manufacturers-list {
@@ -1371,7 +1372,7 @@ a.user-name:hover {
 }
 
 .services-header {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .services-paragraph {
@@ -1497,6 +1498,10 @@ a.user-name:hover {
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 24px;
+}
+
+.about-us p {
+    letter-spacing: 0.7px;
 }
 
 .company-description {
